@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <title>Skills test</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            font-family: 'ocr-bt', monospace;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        div#result{
+            font-family: 'Doto', sans-serif;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 900;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 2px dotted black;
+            display: inline-block;
+            padding: 50px;
+        }
+        </style>
+</head>
+<body>
+    <form>
+        <label>spaghetti</label>
+            <input type="checkbox" id="menu1" value="150.50"></input><br>
+        <label>garlic bread</label>
+            <input type="checkbox" id="menu2" value="99.99"></input><br>
+        <label>carbonara</label>
+            <input type="checkbox" id="menu4" value="120.00"></input><br>
+        <label>lasagna</label>
+            <input type="checkbox" id="menu5" value="130.00"></input><br>
+        <label>pizza</label>
+            <input type="checkbox" id="menu6" value="200.00"></input><br>
+        <label>tiramisu</label>
+            <input type="checkbox" id="menu3" value="49.50"></input><br>
+            <input type="text" id="name1" placeholder="name" required><br>
+            <input type="text" id="address1" placeholder="address" required><br>
+            <input type="text" id="phone1" placeholder="phone" required><br>
+            <input type="button" value="order" py-click="ordering_form">
+    </form>
+    <div id="result"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
